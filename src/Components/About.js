@@ -23,7 +23,7 @@ class About extends Component {
             <div className="three columns">
               <img
                 className="profile-pic"
-                src={profilepic}
+                src="https://avatars.githubusercontent.com/u/29792815?v=4"
                 alt="Nordic Giant Profile Pic"
               />
             </div>
@@ -35,17 +35,15 @@ class About extends Component {
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-                    <span>{name}</span>
-                    <br />
+                    
                     <span>
-                      {street}
+                      37 Hamilton Drive
                       <br />
-                      {city} {state}, {zip}
+                      Guildford, Surrey, Uk
                     </span>
+                
                     <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
+                    <span>evansgichuki656@gmail.com</span>
                   </p>
                 </div>
                 <div className="columns download">

@@ -108,16 +108,19 @@ class Contact extends Component {
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>
                 <p className="address">
-                  {name}
-                  <br />
-                  {street} <br />
-                  {city}, {state} {zip}
-                  <br />
-                  <span>{phone}</span>
-                </p>
+                    
+                    <span>
+                      37 Hamilton Drive
+                      <br />
+                      Guildford, Surrey, Uk
+                    </span>
+                
+                    <br />
+                    <span>evansgichuki656@gmail.com</span>
+                  </p>
               </div>
 
-              <div className="widget widget_tweets">
+              {/* <div className="widget widget_tweets">
                 <h4 className="widget-title">Latest Tweets</h4>
                 <ul id="twitter">
                   <li>
@@ -144,7 +147,7 @@ class Contact extends Component {
                     </b>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </aside>
           </Slide>
         </div>

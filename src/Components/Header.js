@@ -59,7 +59,7 @@ class Header extends Component {
         <div className="row banner">
           <div className="banner-text">
             <Fade bottom>
-              <h1 className="responsive-headline">{name}</h1>
+              <h1 className="responsive-headline">Wahome Gichuki</h1>
             </Fade>
             <Fade bottom duration={1200}>
               <h3>{description}.</h3>
@@ -67,10 +67,10 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
+                <a href="https://www.linkedin.com/in/wahome-gichuki-b124b914b/" className="button btn project-btn">
+                  <i className="fa fa-book"></i>LinkedIn
                 </a>
-                <a href={github} className="button btn github-btn">
+                <a href="https://github.com/evans123456" className="button btn github-btn">
                   <i className="fa fa-github"></i>Github
                 </a>
               </ul>
