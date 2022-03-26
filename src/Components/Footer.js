@@ -5,7 +5,20 @@ class Footer extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const networks = this.props.data.social.map(function (network) {
+    var socials = [
+      {
+        name:"LinkedIn",
+        url:"https://www.linkedin.com/in/wahome-gichuki-b124b914b/",
+        className: "fa fa-linkedin"
+      },
+      {
+        name:"Github",
+        url:"https://github.com/evans123456",
+        className: "fa fa-github"
+      }
+    ]
+
+    const networks = socials.map(function (network) {
       return (
         <li key={network.name}>
           <a href={network.url}>
@@ -21,6 +34,8 @@ class Footer extends Component {
           <Fade bottom>
             <div className="twelve columns">
               <ul className="social-links">{networks}</ul>
+
+
 
              
             </div>
