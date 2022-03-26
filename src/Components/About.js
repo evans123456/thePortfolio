@@ -24,13 +24,12 @@ class About extends Component {
               <img
                 className="profile-pic"
                 src="https://avatars.githubusercontent.com/u/29792815?v=4"
-                alt="Nordic Giant Profile Pic"
               />
             </div>
             <div className="nine columns main-col">
               <h2>About Me</h2>
 
-              <p>{bio}</p>
+              <p>Completed Masters in Data Science, University Of Surrey. Hard-working full stack developer and Data Scientist with a flair for creating elegant solutions in the least amount of time possible. Experienced and specialized in Data Analysis, Machine Learning, Software architecture, Web design, and development using Python and Javascript frameworks, Postgres, git, etc. Also knowledgeable in other technologies such as AWS, GCP, Linux, etc.</p>
               <div className="row">
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>

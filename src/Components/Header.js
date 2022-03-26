@@ -3,6 +3,36 @@ import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      result: null,
+    };
+  }
+
+  componentDidMount() {
+    fetch("https://zenquotes.io/api/today")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            result: result,
+          });
+          console.log("this right here-> ", result);
+          
+        },
+        (error) => {
+          console.log("The error is: ", error);
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
   render() {
     if (!this.props.data) return null;
 
@@ -10,6 +40,16 @@ class Header extends Component {
     const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
+
+    // if (this.props.isLoaded) return (<h3>{this.state.result[0]["q"]}</h3>);
+
+    const GetDescription = () => {
+      if (this.state.isLoaded == true) {
+        return (<div> <h4>{this.state.result[0]["q"]} - {this.state.result[0]["a"]}</h4><br/></div>);
+      }
+      return <p>Loading...</p>;
+    }
+
 
     return (
       <header id="home">
@@ -62,7 +102,9 @@ class Header extends Component {
               <h1 className="responsive-headline">Wahome Gichuki</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+            <h3>Passionate sofware, machine learning and cloud engineer. Ask me about anything</h3>
+              <GetDescription/>
+              
             </Fade>
             <hr />
             <Fade bottom duration={2000}>

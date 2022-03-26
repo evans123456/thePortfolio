@@ -58,7 +58,7 @@ class Portfolio extends Component {
         <Fade left duration={1000} distance="40px">
           <div className="row">
             <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
+              <h1>Check Out Some of My repositories.</h1>
 
               <div
                 id="portfolio-wrapper"
@@ -69,13 +69,15 @@ class Portfolio extends Component {
                 <div>
                   {this.state.isLoaded === true ? (
                     <div>
-                      {this.state.items.slice(0,8).map((item) => (
+                      {this.state.items.slice(0,12).map((item) => (
+                         <a href={item.clone_url} > 
                         <div key={id++} className="columns portfolio-item"> 
                           <div className="item-wrap">
                             <Zmage alt={item.name} src={item.owner.avatar_url} />
                             <div style={{ textAlign: "center" }}>{item.name}</div>
+                           
                           </div>
-                        </div>))}
+                        </div> </a>))}
                     </div>)
                     :null}
 
