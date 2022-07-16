@@ -147,10 +147,10 @@ class Resume extends Component {
                 <h3>Mclaren Applied</h3>
                 <p className="info">
                   
-                  Communications software engineer
+                  Associate Communications software engineer
                   <span>&bull;</span> <em className="date">March 2022 - Present</em>
                 </p>
-                <p>● Linux<br/> ● AWS<br/>● Python<br/></p>
+                <p>● Linux systems(Building Debian AMIs/Interfaces/Services etc.)<br/> ● AWS (EC2, Lambda, VPC, VPNs, )<br/>● Python/Bash/Docker/Salt/Terraform<br/>● Network programming<br/>● Deployment Pipelines<br/></p>
               </div>
 
               <div >
