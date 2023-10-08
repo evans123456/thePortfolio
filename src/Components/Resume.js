@@ -199,7 +199,7 @@ class Resume extends Component {
                   ● Implemented secure user authentication and authorization systems, including login/logout functionalities, resulting in enhanced data protection and user management. Designed and maintained social network features such as posting and commenting, fostering user interaction and engagement.Managed diverse user roles and permissions, facilitating tailored user experiences based on their assigned roles.<br/>
                   ● Integrated AI models into applications, enabling advanced features and improving user experiences i.e added a mood tracker for sentiment analysys on the posts done by users. Developed comprehensive invoicing and contract management systems, ensuring accurate financial tracking and legal compliance.
 
-                  <a target="_blank" href="mkodisha.com"> latest app </a> 
+                  <a target="_blank" href="https://mkodisha.com"> latest app </a> 
                 </p>
               </div>
 
