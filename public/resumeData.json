@@ -46,7 +46,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Have hands on experience in Python, R, Django,Flask, ReactJS, Redux, Data visualization, Node, REST APIs, SQL, NoSQL,Telegraf Grafana,Icinga, Docker, Auth0, InfluxDB, Terraform, CI/CD pipelines , Cloud computing i.e AWS (Lambda, S3, AppRunner, VPNs, IAM, Route53, Timestream, IOT, DynamoDB, EC2),GCP, Salt, Machine learning, Web scraping, RASA,Git, Genetic algorithms, Data analysis, Natural language processing, Bash and Linux Scripting, Linux Networking, Cisco, Lantech and Oring switches, Eltech APs etc. summarised below",
     "education":[
       {
         "school":"University?",

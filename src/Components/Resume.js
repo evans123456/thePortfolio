@@ -46,19 +46,19 @@ class Resume extends Component {
     var data = [
       {
         name: "Web, software Development and Design",
-        level:500
+        level:700
       },
       {
         name: "Data Science & Machine learning",
         level:450
       },
       {
-        name: "Cloud Infrastructures",
-        level:500
+        name: "Cloud Infrastructures (AWS)",
+        level:600
       },
       {
         name: "Linux",
-        level:470
+        level:570
       },
       {
         name: "Databases",
@@ -69,7 +69,11 @@ class Resume extends Component {
         level:490
       },
       {
-        name: "Genetic algorithms",
+        name: "Monitoring Tools (Grafana, Icinga)",
+        level:450
+      },
+      {
+        name: "Networking, Routers and Switches",
         level:450
       }
     ]
@@ -103,7 +107,7 @@ class Resume extends Component {
                   {/* {education} */}
 
                 <div >
-                  <h3 ><a href="https://www.surrey.ac.uk/postgraduate/data-science-msc"> University of Surrey</a> </h3>
+                  <h3 ><a target="_blank" href="https://www.surrey.ac.uk/postgraduate/data-science-msc"> University of Surrey</a> </h3>
                   <p className="info">
                     MSC. Data Science <span>&bull;</span>
                     <em className="date">2022</em>
@@ -115,7 +119,7 @@ class Resume extends Component {
                 </div>
 
                 <div >
-                  <h3><a href="https://computerscience.uonbi.ac.ke/"> University of Nairobi</a> </h3>
+                  <h3><a target="_blank" href="https://computerscience.uonbi.ac.ke/"> University of Nairobi</a> </h3>
                   <p className="info">
                     BSC. Computer Science <span>&bull;</span>
                     <em className="date">2019</em>
@@ -150,7 +154,21 @@ class Resume extends Component {
                   Associate Communications software engineer
                   <span>&bull;</span> <em className="date">March 2022 - Present</em>
                 </p>
-                <p>● Linux systems(Building Debian AMIs/Interfaces/Services etc.)<br/> ● AWS (EC2, Lambda, VPC, VPNs, )<br/>● Python/Bash/Docker/Salt/Terraform<br/>● Network programming<br/>● Deployment Pipelines<br/></p>
+                <p>
+                  ● Implemented a monthly backup of customer telemetry from AWS Timestream to S3 which were accessible to the client by a serverside Node app deployed on AWS Apprunner as a Docker Image. Terraform was used to maintain the infrastructure which comprised of IAM roles and policies,Lambda, Route53, S3, Timestream,Auth0, ECR and Apprunner.<br/> 
+                  ● Led the development of the train commissioning script, involving the end-to-end automation of configuring the on train network devices which involved updating,pushing firmware and networking configurations on the on train devices e.g switches and Access points.Involved indepth use of Linux networking i.e layer 2/ layer 3 protocols.<br/>
+                  ● Led the planning, designing, and implementation of a Live health Grafana dashboards to monitor the status of components of the active antennas across all environments. This was used to know the trains whereabouts and health status. This involved writing scripts that would collect the data and pass to Telegraf which then stored to Timestream, and then displaying it on dashboards using Grafana which would provide realtime analysis.<br/>
+                  ● Developed and maintained Icinga dashboards and check scripts to monitor client Service Level Agreements (SLAs) for our clients. The checks were written in python/bash and passed on to the slave devices using the Salt stack master minion architecture. e.g Developed an Icinga check script to monitor the effectiveness of data ingestion by the RabbitMQ/Telegraf/Influx system, check modem downtime etc. and setup necessary notifications to external clients.<br/>
+                  ● Contributed in upgrading the productfrom Debian 9 to Debian 11 to enable package installation,security, ensuring compatibility and support to our systems.this involved . Implementing the transition from MNQMI checks(nmcli) to modem manager(mmcli) for configuring and monitoring modems, and retrieving modem telemetry.<br/></p>
+                  ● Developed GitLab CI/CD  pipelines, for nettools,iproute , inhouse scripts and Debian based AMIs (Amazon machine Images) ,that would build , package, tag and deploy the scripts as packages to the company package registry. This would allow easy installation on the Virtual Machines.
+                  ● Designed and set up a captive portal, providing a user-friendly interface for on boarding passengers to the customer WiFi network.This also involved routing client traffic to ensure one logs in before using the WiFi.
+                  ● Implemented a solution to route third-party VPN traffic via local TCP-intercept instead of Palo Alto devices which involved changing Linux IPtables and Rules and configuring network interfaces on the Linux machines and VM.
+                  ● Created Linux cronjobs to periodically check for resources on the other side of the VPN, mitigating intermittent tunnel failures.
+                  ● Contributed in the creation of the new starters guide ,participated in training reviews to ensure new team members can quickly ramp up their skills, took part in company wide presentations showcasing products ive developed/took part in, Led as the scrum master in various sprints, Took part in CAB meetings to explain new features to the clients.
+                  ● Implemented a systemd fake hardware clock fix that helps sync the Virtual machine’s time with the hardware clock to fix an issue with logs having the wrong time.
+                  ● Addressed security concerns by ensuring SSH banner information is hidden from potential attackers on the Linux boxes we provided, as identified during the clients Security Pen Test.
+              
+              
               </div>
 
               <div >
@@ -162,10 +180,26 @@ class Resume extends Component {
                   <span>&bull;</span> <em className="date">Jun 2021</em>
                 </p>
                 <p>
-                  - Took part in skills sessions with Google.<br/>
-                  - Attended talks by Google, Amazon, Bloomberg, and Ey <br/>
-                  - Completed sample work simulating a real-world Software development task.<br/>
-                  <a href="https://www.brightnetwork.co.uk/certificates/internship-experience-uk-techn_pwnahukxm9fqej/"> see cert</a> 
+                  - Participated in a comprehensive software development project facilitated by Bright Network UK, emulating real-world scenarios and utilizing Google technologies. This task focused on creating functions akin to those employed in YouTube's operations. Additionally, I had the opportunity to attend skills sessions conducted by industry giants such as Google, Amazon, Vodafone, Bloomberg, and Ey, enhancing my knowledge and expertise in various areas of interest.<br/>
+                  <a target="_blank" href="https://www.brightnetwork.co.uk/certificates/internship-experience-uk-techn_pwnahukxm9fqej/"> see cert</a> 
+                </p>
+              </div>
+
+              <div >
+                <h3>Freelance, Fullstack Developer</h3>
+                <p className="info">
+                  
+                  
+                    Technology Intern
+                  <span>&bull;</span> <em className="date">Jun 2021</em>
+                </p>
+                <p>
+                  ● Developed full-stack applications, leveraging React.js for the frontend and Django for the backend, demonstrating a comprehensive understanding of both client-side and server-side operations.Expertise in managing data with PostgreSQL databases, ensuring efficient data storage, retrieval, and manipulation.<br/>
+                  ● Engineered robust, scalable applications features such as video call functionalities, Incorporated payment gateways, streamlining online transactions through 3rd party payment platforms such as iPay, Flutterwave,Jenga and Mpesa APIs and enhancing user convenience. <br/>
+                  ● Implemented secure user authentication and authorization systems, including login/logout functionalities, resulting in enhanced data protection and user management. Designed and maintained social network features such as posting and commenting, fostering user interaction and engagement.Managed diverse user roles and permissions, facilitating tailored user experiences based on their assigned roles.<br/>
+                  ● Integrated AI models into applications, enabling advanced features and improving user experiences i.e added a mood tracker for sentiment analysys on the posts done by users. Developed comprehensive invoicing and contract management systems, ensuring accurate financial tracking and legal compliance.
+
+                  <a target="_blank" href="mkodisha.com"> latest app </a> 
                 </p>
               </div>
 

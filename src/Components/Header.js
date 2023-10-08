@@ -13,7 +13,7 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    fetch("https://zenquotes.io/api/today")
+    fetch("https://api.quotable.io/random")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -45,7 +45,8 @@ class Header extends Component {
 
     const GetDescription = () => {
       if (this.state.isLoaded == true) {
-        return (<div> <h4>{this.state.result[0]["q"]} - {this.state.result[0]["a"]}</h4><br/></div>);
+        // console.log("wod dis",this.state.result)
+        return (<div> <br/><br/><h4 style={{color:"grey"}}>{this.state.result.content} - </h4><br/> <h5>{this.state.result.author}</h5> </div>);
       }
       return <p>Loading...</p>;
     }
@@ -53,7 +54,7 @@ class Header extends Component {
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="fountain" bg={true} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
