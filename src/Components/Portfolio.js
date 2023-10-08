@@ -58,8 +58,8 @@ class Portfolio extends Component {
         <Fade left duration={1000} distance="40px">
           <div className="row">
             <div className="twelve columns collapsed">
-              <h1>Check Out Some of My repositories.</h1>
-
+              <h1>Check Out Some of My public repositories.</h1>
+ 
               <div
                 id="portfolio-wrapper"
                 className="bgrid-quarters s-bgrid-thirds cf"

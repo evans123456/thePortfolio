@@ -155,19 +155,8 @@ class Resume extends Component {
                   <span>&bull;</span> <em className="date">March 2022 - Present</em>
                 </p>
                 <p>
-                  ● Implemented a monthly backup of customer telemetry from AWS Timestream to S3 which were accessible to the client by a serverside Node app deployed on AWS Apprunner as a Docker Image. Terraform was used to maintain the infrastructure which comprised of IAM roles and policies,Lambda, Route53, S3, Timestream,Auth0, ECR and Apprunner.<br/> 
-                  ● Led the development of the train commissioning script, involving the end-to-end automation of configuring the on train network devices which involved updating,pushing firmware and networking configurations on the on train devices e.g switches and Access points.Involved indepth use of Linux networking i.e layer 2/ layer 3 protocols.<br/>
-                  ● Led the planning, designing, and implementation of a Live health Grafana dashboards to monitor the status of components of the active antennas across all environments. This was used to know the trains whereabouts and health status. This involved writing scripts that would collect the data and pass to Telegraf which then stored to Timestream, and then displaying it on dashboards using Grafana which would provide realtime analysis.<br/>
-                  ● Developed and maintained Icinga dashboards and check scripts to monitor client Service Level Agreements (SLAs) for our clients. The checks were written in python/bash and passed on to the slave devices using the Salt stack master minion architecture. e.g Developed an Icinga check script to monitor the effectiveness of data ingestion by the RabbitMQ/Telegraf/Influx system, check modem downtime etc. and setup necessary notifications to external clients.<br/>
-                  ● Contributed in upgrading the productfrom Debian 9 to Debian 11 to enable package installation,security, ensuring compatibility and support to our systems.this involved . Implementing the transition from MNQMI checks(nmcli) to modem manager(mmcli) for configuring and monitoring modems, and retrieving modem telemetry.<br/></p>
-                  ● Developed GitLab CI/CD  pipelines, for nettools,iproute , inhouse scripts and Debian based AMIs (Amazon machine Images) ,that would build , package, tag and deploy the scripts as packages to the company package registry. This would allow easy installation on the Virtual Machines.
-                  ● Designed and set up a captive portal, providing a user-friendly interface for on boarding passengers to the customer WiFi network.This also involved routing client traffic to ensure one logs in before using the WiFi.
-                  ● Implemented a solution to route third-party VPN traffic via local TCP-intercept instead of Palo Alto devices which involved changing Linux IPtables and Rules and configuring network interfaces on the Linux machines and VM.
-                  ● Created Linux cronjobs to periodically check for resources on the other side of the VPN, mitigating intermittent tunnel failures.
-                  ● Contributed in the creation of the new starters guide ,participated in training reviews to ensure new team members can quickly ramp up their skills, took part in company wide presentations showcasing products ive developed/took part in, Led as the scrum master in various sprints, Took part in CAB meetings to explain new features to the clients.
-                  ● Implemented a systemd fake hardware clock fix that helps sync the Virtual machine’s time with the hardware clock to fix an issue with logs having the wrong time.
-                  ● Addressed security concerns by ensuring SSH banner information is hidden from potential attackers on the Linux boxes we provided, as identified during the clients Security Pen Test.
-              
+                Implemented a backup system for customer telemetry from AWS Timestream to S3, accessible via a Node app on AWS Apprunner, with infrastructure maintained using Terraform. Led the automation of on-train network device configurations, including firmware updates and Linux networking. Developed live Grafana dashboards to monitor train antenna status, Icinga dashboards for client SLAs, and addressed modem telemetry with a transition from MNQMI checks to modem manager. Contributed to upgrading the product to Debian 11, developed GitLab CI/CD pipelines for various tools, and designed a captive portal for WiFi access. Implemented VPN traffic routing solutions, created Linux cronjobs for VPN resource checks, and contributed to training materials and company presentations. Addressed security concerns, including hiding SSH banner information, and implemented a systemd fix for VM time synchronization.
+                </p>
               
               </div>
 
@@ -243,6 +232,8 @@ class Resume extends Component {
 
             <div className="nine columns main-col">
               <p>{skillmessage}</p>
+
+              {/* <h6>Python, R, Django,Flask, ReactJS, Redux, Data visualization, Node, REST APIs, SQL, NoSQL,Telegraf Grafana,Icinga, Docker, Auth0, InfluxDB, Terraform, CI/CD pipelines , Cloud computing i.e AWS (Lambda, S3, AppRunner, VPNs, IAM, Route53, Timestream, IOT, DynamoDB, EC2),GCP, Salt, Machine learning, Web scraping, RASA,Git, Genetic algorithms, Data analysis, Natural language processing, Bash and Linux Scripting, Linux Networking, Cisco, Lantech and Oring switches, Eltech APs</h6> */}
 
               <div className="bars">
                 <ul className="skills">{skills}</ul>
